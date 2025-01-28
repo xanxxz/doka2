@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doka Burger</title>
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./images/favicon.png">
+  </head>
+  <body class="page">
+    <header class="header">
+      <ul class="logo">
+        <li>
+          <h3>DokaBurger</h3>
+        </li>
+        <li>
+          <img
+          src="./svg/logo.svg"
+          alt="Логотип сайта"
+          />
+        </li>
+      </ul>
+      <ul class="header__content">
+        <li class="header__image-item">
+          <img
+            class="burger-image"
+            src="./svg/burger-logo.svg"
+            alt="Бургер в мультяшной рисовке"
+          />
+        </li>
+        <li class="header__text-item">
+          <h1 class="header__title">Только самые <span class="second-color">сочные бургеры!</span></h1>
+          <p class="header__subtitle">Бесплатная доставка от 599₽</p>
+        </li>
+      </ul>
+    </header>
+    <main class="main">
+     <nav class="categories">
+        <ul class="categories__list">
+          <li class="categories__list-item">
+            <button class="button categories__button is-active" type="button">
+              <img
+                src="./svg/burgers.svg"
+                alt="Сочный бургер"
+              />
+              <span class="categories__button-text">
+                Бургеры
+              </span>
+            </button>
+          </li>
+          <li class="categories__list-item">
+            <button class="button categories__button" type="button">
+              <img
+                src="./svg/snacks.svg"
+                alt="Закуски и снэки"
+              />
+              <span class="categories__button-text">
+                Закуски
+              </span>
+            </button>
+          </li>
+          <li class="categories__list-item">
+            <button class="button categories__button" type="button">
+              <img
+                src="./svg/hot-dogs.svg"
+                alt="Горячие хот-доги"
+              />
+              <span class="categories__button-text">
+                Хот-доги
+              </span>
+            </button>
+          </li>
+          <li class="categories__list-item">
+            <button class="button categories__button" type="button">
+              <img
+                src="./svg/combo.svg"
+                alt="Выгодные комбо"
+              />
+              <span class="categories__button-text">
+                Комбо
+              </span>
+            </button>
+          </li>
+          <li class="categories__list-item">
+            <button class="button categories__button" type="button">
+              <img
+                src="./svg/shawarma.svg"
+                alt="Вкусная шаурма"
+              />
+              <span class="categories__button-text">
+                Шаурма
+              </span>
+            </button>
+          </li>
+          <li class="categories__list-item">
+            <button class="button categories__button" type="button">
+              <img
+                src="./svg/pizza.svg"
+                alt="Хрустящая пицца"
+              />
+              <span class="categories__button-text">
+                Пицца
+              </span>
+            </button>
+          </li>
+          <li class="categories__list-item">
+            <button class="button categories__button" type="button">
+              <img
+                src="./svg/wok.svg"
+                alt="Сытная лапша"
+              />
+              <span class="categories__button-text">
+                Вок
+              </span>
+            </button>
+          </li>
+          <li class="categories__list-item">
+            <button class="button categories__button" type="button">
+              <img
+                src="./svg/desserts.svg"
+                alt="Сладкие пончики"
+              />
+              <span class="categories__button-text">
+                Десерты
+              </span>
+            </button>
+          </li>
+          <li class="categories__list-item">
+            <button class="button categories__button" type="button">
+              <img
+                src="./svg/sauces.svg"
+                alt="Соусы"
+              />
+              <span class="categories__button-text">
+                Соусы
+              </span>
+            </button>
+          </li>
+        </ul>
+     </nav>
+    <aside class="basket">
+      <h2 class="basket__title">Корзина</h2>
+      <p class="basket__amount">0</p>
+      <p class="basket__subtitle">Тут пока пусто :&#40</p>
+    </aside>
+     <section class="burger-menu">
+      <h2 class="burger-menu__title">Бургеры</h2>
+      <ul class="burger-menu__list">
+        <li class="burger-menu__list-item">
+          <img
+            class="burger-menu__image"
+            src="./images/meat-bomb.png"
+            alt="Супермясной Бургер"
+            loading="lazy"
+          />
+          <div class="burger-menu__info">
+            <h3 class="burger-price">689₽</h3>
+            <p class="burger-name">Мясная бомба</p>
+            <p class="burger-gramm">520г</p>
+          </div>
+          <button class="burger-menu__button button" type="button"><span class="burger-menu__button-text">Добавить</span></button>
+        </li>
+        <li class="burger-menu__list-item">
+          <img
+            class="burger-menu__image"
+            src="./images/super-cheesy.png"
+            alt="Суперсырный Бургер"
+            loading="lazy"
+          />
+          <div class="burger-menu__info">
+            <h3 class="burger-price">550₽</h3>
+            <p class="burger-name">Супер сырный</p>
+            <p class="burger-gramm">512г</p>
+          </div>
+          <button class="burger-menu__button button" type="button"><span class="burger-menu__button-text">Добавить</span></button>
+        </li>
+        <li class="burger-menu__list-item">
+          <img
+            class="burger-menu__image"
+            src="./images/satisfying.png"
+            alt="Сытный Бургер"
+            loading="lazy"
+          />
+          <div class="burger-menu__info">
+            <h3 class="burger-price">639₽</h3>
+            <p class="burger-name">Сытный</p>
+            <p class="burger-gramm">580г</p>
+          </div>
+          <button class="burger-menu__button button" type="button"><span class="burger-menu__button-text">Добавить</span></button>
+        </li>
+        <li class="burger-menu__list-item">
+          <img
+            class="burger-menu__image"
+            src="./images/heavy-blow.png"
+            alt="Классический Бургер"
+            loading="lazy"
+          />
+          <div class="burger-menu__info">
+            <h3 class="burger-price">480₽</h3>
+            <p class="burger-name">Тяжелый удар</p>
+            <p class="burger-gramm">470г</p>
+          </div>
+          <button class="burger-menu__button button" type="button"><span class="burger-menu__button-text">Добавить</span></button>
+        </li>
+        <li class="burger-menu__list-item">
+          <img
+            class="burger-menu__image"
+            src="./images/pudge-burger.png"
+            alt="Пудж Бургер"
+            loading="lazy"
+          />
+          <div class="burger-menu__info">
+            <h3 class="burger-price">770₽</h3>
+            <p class="burger-name">Изящная дота</p>
+            <p class="burger-gramm">550г</p>
+          </div>
+          <button class="burger-menu__button button" type="button"><span class="burger-menu__button-text">Добавить</span></button>
+        </li>
+        <li class="burger-menu__list-item">
+          <img
+            class="burger-menu__image"
+            src="./images/italian.png"
+            alt="Итальянский Бургер"
+            loading="lazy"
+          />
+          <div class="burger-menu__info">
+            <h3 class="burger-price">560₽</h3>
+            <p class="burger-name">Итальянский</p>
+            <p class="burger-gramm">510г</p>
+          </div>
+          <button class="burger-menu__button button" type="button"><span class="burger-menu__button-text">Добавить</span></button>
+        </li>
+      </ul>
+     </section>
+    </main>
+    <script src="./scripts/like.js"></script>
+  </body>
+</html>

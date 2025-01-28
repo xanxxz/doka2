@@ -1,0 +1,19 @@
+@keyframes pulse {
+  from {
+    scale: 1;
+    transform-origin: center;
+  }
+  to {
+    scale: 1.05;
+    transform-origin: center;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

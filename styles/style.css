@@ -1,0 +1,256 @@
+/*
+<path fill="#F2A40C" d="M128.001 290.686c-57.886 0-104.812-5.48-104.812-12.238 
+0-6.759 46.926-12.238 104.812-12.238 57.884 0 104.81 5.479 104.81 12.238 0 6.758-46.926 12.238-104.81 12.238Z"/>
+Тень бургера
+*/
+
+.page {
+  font-family: var(--font), sans-serif;
+  background-color: var(--bg-color);
+  color: var(--main-color)
+}
+
+/*Секция header*/
+
+.header {
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+  grid-template-rows: 70px 1fr;
+  block-size: 466px;
+  color: var(--main-color);
+  background-image: linear-gradient(215deg, var(--main-bg-color), var(--accent-bg-color));
+  border-bottom-left-radius: var(--dekstop-border-radius);
+  border-bottom-right-radius: var(--dekstop-border-radius);
+}
+
+.logo {
+  margin-block-start: 15px;
+  display: flex;
+  gap: 5px;
+  font-size: var(--mini-font-size);
+  justify-content: center;
+}
+
+.header__content {
+  display: grid;
+  grid-template-columns: 326px 427px;
+  justify-items: center;
+  gap: 20px;
+}
+
+/* Неиспользованные классы из header
+
+.header__image-item {
+
+}
+
+.burger-image {
+
+}
+
+*/
+
+.header__text-item {
+  margin-block-start: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.header__title {
+  line-height: 60px;
+  font-size: var(--extra-big-font-size);
+  font-weight: var(--extra-bold);
+}
+
+.second-color {
+  color: var(--second-color);
+}
+
+.header__subtitle {
+  grid-column: 2;
+  font-size: var(--mini-font-size);
+  font-weight: var(--bold);
+}
+
+/*Секция main*/
+
+.main {
+  margin: 35px 75px 50px;
+}
+
+/*Секция категорий*/
+
+.categories__list {
+  display: flex;
+  gap: 14px;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-bg-color) var(--bg-color);
+}
+
+.categories__list-item {
+  block-size: 50px;
+  padding: 5px;
+}
+
+.categories__button {
+  block-size: 40px;
+  border-radius: 50px;
+  padding: 8px 14px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.categories__button-text {
+  font-size: var(--mini-font-size);
+  font-weight: var(--regular);
+  line-height: 21.82px;
+  opacity: 1;
+  transition: color .2s linear;
+  transition: opacity .3s linear;
+}
+
+.categories__button-text:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.is-active .categories__button-text {
+  color: var(--accent-color);
+  transition: .2s linear;
+}
+
+.is-active.categories__button {
+  animation: pulse .2s;
+}
+
+/*Секция корзина*/
+
+.basket {
+  margin-block-start: 135px;
+  inline-size: 300px;
+  display: grid;
+  grid-template-columns: 190px 110px;
+  align-items: center;
+}
+
+.basket__title {
+  font-size: var(--middle-font-size);
+  font-weight: var(--bold);
+  line-height: 24px;
+}
+
+.basket__amount {
+  font-size: var(--tiny-font-size);
+  font-weight: var(--regular);
+}
+
+.basket__subtitle {
+  padding-block-start: 16px;
+  font-size: var(--mini-font-size);
+  font-weight: var(--regular);
+  line-height: 21px;
+}
+
+/*Секция меню бургеров*/
+
+.burger-menu {
+  margin-inline-start: 29%;
+  margin-block-start: -155px;
+}
+
+.burger-menu__title {
+  font-size: var(--big-font-size);
+  font-weight: var(--bold);
+  margin-block-end: 32px;
+}
+
+.burger-menu__list {
+  padding-inline-start: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 276px);
+  gap: 30px;
+  block-size: 100dvb;
+  overflow: auto;
+}
+
+.burger-menu__list-item {
+  block-size: 411px;
+}
+
+.burger-menu__image {
+  block-size: 220px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+}
+
+.burger-menu__list-item:nth-child(5) .burger-menu__image {
+  inline-size: 276px;
+}
+
+.burger-menu__info {
+  margin-block-start: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.burger-price {
+  font-size: var(--middle-font-size);
+  font-weight: var(--bold);
+}
+
+.burger-name {
+  font-size: var(--mini-font-size);
+  font-weight: var(--regular);
+}
+
+.burger-gramm {
+  padding-block-start: 21px;
+  font-size: var(--mini-font-size);
+  font-weight: var(--bold);
+  color: var(--gramm-color);
+  opacity: 0.4;
+}
+
+.burger-menu__button {
+  margin-block-start: 20px;
+  margin-inline-start: 85px;
+  block-size: 40px;
+  border-radius: 50px;
+  padding: 8px 14px;
+}
+
+.is-active.burger-menu__button {
+  animation: pulse .2s;
+  position: relative;
+}
+
+.burger-menu__button-text {
+  font-size: var(--mini-font-size);
+  font-weight: var(--regular);
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.burger-menu__button-text:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.is-active .burger-menu__button-text {
+  color: transparent;
+}
+
+.is-active .burger-menu__button-text::before {
+  content: 'Убрать ×';
+  color: var(--accent-color);
+  position: absolute;
+  left: 16px;
+  scale: 1.1;
+}

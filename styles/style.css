@@ -254,3 +254,43 @@
   left: 16px;
   scale: 1.1;
 }
+
+
+
+.logo-footer {
+  margin-block-start: 200px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.logo-footer__title {
+  font-size: var(--big-font-size);
+  color: var(--logo-footer-color)
+}
+
+.address {
+  margin-block-start: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-info span, a {
+  line-height: 31px;
+}
+
+.tel {
+  padding-inline-start: 350px;
+}
+
+.tel p {
+  line-height: 31px;
+}
+
+.social {
+  padding-inline-end: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px
+}
+

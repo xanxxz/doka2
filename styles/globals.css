@@ -45,6 +45,7 @@ li {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 .button,
@@ -78,6 +79,6 @@ ol {
   text-transform: uppercase;
 }
 
-.is-active {
-  background: linear-gradient(215deg, var(--main-bg-color), var(--accent-bg-color));
+.is-active.button {
+  background-image: linear-gradient(215deg, var(--main-bg-color), var(--accent-bg-color));
 }

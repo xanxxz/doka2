@@ -10,7 +10,7 @@ a:not(.tel):hover {
 }
 
 .rot:hover {
-  animation: rot 1s linear 0s normal none infinite running;
+  animation: rot 1s ease 0s normal none running;
 }
 
 .logo-item {

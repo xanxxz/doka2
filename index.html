@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/effects.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
@@ -15,11 +16,9 @@
   </head>
   <body class="page">
     <header class="header">
-      <ul class="logo">
-        <li>
+      <ul>
+        <li class="logo logo-item">
           <h3>DokaBurger</h3>
-        </li>
-        <li>
           <img
           src="./svg/logo.svg"
           alt="Логотип сайта"
@@ -46,6 +45,7 @@
             <li class="categories__list-item">
               <button class="button categories__button is-active" type="button">
                 <img
+                  class="rot"
                   src="./svg/burgers.svg"
                   alt="Сочный бургер"
                 />
@@ -57,6 +57,7 @@
             <li class="categories__list-item">
               <button class="button categories__button" type="button">
                 <img
+                  class="rot"
                   src="./svg/snacks.svg"
                   alt="Закуски и снэки"
                 />
@@ -68,6 +69,7 @@
             <li class="categories__list-item">
               <button class="button categories__button" type="button">
                 <img
+                  class="rot"
                   src="./svg/hot-dogs.svg"
                   alt="Горячие хот-доги"
                 />
@@ -79,6 +81,7 @@
             <li class="categories__list-item">
               <button class="button categories__button" type="button">
                 <img
+                  class="rot"
                   src="./svg/combo.svg"
                   alt="Выгодные комбо"
                 />
@@ -90,6 +93,7 @@
             <li class="categories__list-item">
               <button class="button categories__button" type="button">
                 <img
+                  class="rot"
                   src="./svg/shawarma.svg"
                   alt="Вкусная шаурма"
                 />
@@ -101,6 +105,7 @@
             <li class="categories__list-item">
               <button class="button categories__button" type="button">
                 <img
+                  class="rot"
                   src="./svg/pizza.svg"
                   alt="Хрустящая пицца"
                 />
@@ -112,6 +117,7 @@
             <li class="categories__list-item">
               <button class="button categories__button" type="button">
                 <img
+                  class="rot"
                   src="./svg/wok.svg"
                   alt="Сытная лапша"
                 />
@@ -123,6 +129,7 @@
             <li class="categories__list-item">
               <button class="button categories__button" type="button">
                 <img
+                  class="rot"
                   src="./svg/desserts.svg"
                   alt="Сладкие пончики"
                 />
@@ -134,6 +141,7 @@
             <li class="categories__list-item">
               <button class="button categories__button" type="button">
                 <img
+                  class="rot"
                   src="./svg/sauces.svg"
                   alt="Соусы"
                 />
@@ -239,22 +247,58 @@
         </ul>
       </section>
       <footer class="footer">
-        <ul class="logo-footer">
-          <li>
-            <h3 class="logo-footer__title">DokaBurger</h3>
-          </li>
-          <li>
-            <img
-            src="./svg/logo-footer.svg"
-            alt="Логотип сайта"
-            loading="lazy"
-            />
-          </li>
-        </ul>
-        <p class="site-info">
-          <span>© DokaBurger, 2025</span><br>
-          <span>Coder: Даниил Дейнега</span>
-        </p>
+        <address class="address">
+          <ul class="left-footer">
+            <li class="left-footer__logo">
+              <h3 class="left-footer__title">DokaBurger</h3>
+              <img
+                class="left-footer__image"
+                src="./svg/logo-footer.svg"
+                alt="Логотип сайта"
+                loading="lazy"
+              />
+            </li>
+            <li class="left-footer__text">
+              <p>© DokaBurger, 2025</p>
+              <p>Coder: Даниил Дейнега</p>
+            </li>
+          </ul>
+          <ul class="center-footer">
+            <li>
+              <p class="common-footer__title">Номер для заказа</p>
+            </li>
+            <li>
+              <p class="center-footer__tel">
+                <a class="tel" href="tel: +79372522242" type="tel">
+                  +7(937)252-22-42
+                </a>
+              </p>
+            </li>
+          </ul>
+          <ul class="right-footer">
+            <li>
+              <p class="common-footer__title">Мы в соцсетях</p>
+            </li>
+            <li class="right-footer__links">
+              <a href="https://vk.com/epil3pticc" type="link" target="blank">
+                <img
+                  class="rot"
+                  src="./svg/vk.svg"
+                  alt="Вконтакте"
+                  loading="lazy"
+                />
+              </a>
+              <a href="https://t.me/sssvam2" type="link" target="blank">
+                <img
+                  class="rot"
+                  src="./svg/tg.svg"
+                  alt="Telegram"
+                  loading="lazy"
+                />
+              </a>
+            </li>
+          </ul>
+        </address>
       </footer>
     </main>
     <script src="./scripts/like.js"></script>

@@ -8,9 +8,9 @@
 Если эти классы поменять в HTML, скрипт перестанет работать. Будьте аккуратны.
 */
 
-const likeHeartArray = document.querySelectorAll('.button');
-const likeButtonArray = document.querySelectorAll('.button');
-const iconButtonArray = document.querySelectorAll('.button');
+const likeHeartArray = document.querySelectorAll('.burger-menu__button');
+const likeButtonArray = document.querySelectorAll('.burger-menu__button');
+const iconButtonArray = document.querySelectorAll('.burger-menu__button');
 
 iconButtonArray.forEach((iconButton, index) => {
   iconButton.onclick = () =>

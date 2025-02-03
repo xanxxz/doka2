@@ -1,12 +1,12 @@
 a:not(.tel) {
-  opacity: 1;
-  transition: opacity .2s linear;
+  opacity: 0.6;
+  transition: .2s ease;
   position: relative;
 }
 
 a:not(.tel):hover {
-  opacity: 0.6;
-  transition: opacity .2s linear;
+  opacity: 1;
+  transition: .2s ease;
 }
 
 .rot:hover {
@@ -25,13 +25,13 @@ a:not(.tel):hover {
 }
 
 .tel {
-  transform: scale(1);
+  opacity: 0.6;
   transition: .3s .2s ease;
 }
 
 .tel:hover {
+  opacity: 1;
   transition: .3s ease;
-  transform: scale(1.1);
 }
 
 .tel::before {
@@ -39,7 +39,7 @@ a:not(.tel):hover {
   position: absolute;
   top: calc(100% + 1px);
   inline-size: 0;
-  block-size: 2px;
+  block-size: 1.5px;
   right: 0;
   transition: .5s cubic-bezier(0.51, 0.18, 0, 0.88) .2s;
 }
@@ -103,8 +103,16 @@ a:not(.tel):hover {
   transition: color .2s linear;
 }
 
+.is-active .categories__button-text:hover {
+  opacity: 1;
+}
+
 .is-active.categories__button {
   animation: pulse .2s;
+}
+
+.is-active.categories__button {
+  cursor: default;
 }
 
 
@@ -131,8 +139,9 @@ a:not(.tel):hover {
 .is-active .burger-menu__button-text::before {
   content: 'Убрать ×';
   color: var(--accent-color);
+  font-size: var(--font);
+  font-weight: var(--bold);
   position: absolute;
   left: 16px;
-  scale: 1.1;
 }
 
